@@ -6,11 +6,16 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     steps:
-      - name: My first step
-        run: echo This is the first step of my first job.
-      - name: My second step
-        run: echo This is the second step of my first job
-
+      - name: Clone Repo
+        type: git-clone
+        repo: 'lentond/ArtWebsite'
+        revision: main
+        git: github
+      - name: Build Images
+        run: |
+        cd ArtWebsite
+        docker-compose up
+      
   BuildAndPush:
     runs-on: ubuntu-latest
     needs: Testing

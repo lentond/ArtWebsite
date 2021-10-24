@@ -1,1 +1,10 @@
-#TEMPLATE: Build Docker workflow that allows for local testing
+version: '1.0'
+steps:
+- name: Maven Package
+  image: 'maven:3.5.2-jdk-8-alpine'
+  run: |
+  cd ArtWebsite
+  cd backend
+  mvn package
+- name: Build Images
+  

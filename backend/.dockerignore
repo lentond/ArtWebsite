@@ -1,0 +1,1 @@
+#Files to be ignored by the docker daemon (speeds up process)
