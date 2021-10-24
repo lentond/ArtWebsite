@@ -14,7 +14,7 @@ jobs:
       - name: Build Images
         run: |
         cd ArtWebsite
-        docker-compose up
+        docker-compose up |
       
   BuildAndPush:
     runs-on: ubuntu-latest

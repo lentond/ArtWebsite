@@ -5,6 +5,6 @@ steps:
   run: |
   cd ArtWebsite
   cd backend
-  mvn package
+  mvn package |
 - name: Build Images
-  
+
