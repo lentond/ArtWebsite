@@ -1,1 +1,39 @@
+name: ArtCIPipe
 
+on: push
+
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
+      - name: My second step
+        run: echo This is the second step of my first job
+
+  BuildAndPush:
+    runs-on: ubuntu-latest
+    needs: Testing
+    steps:
+      - name: My first step
+        run: echo This is the first step of my second job.
+  
+  job_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my third job.
+  
+  job_4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my fourth job.
+  
+  job_5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my fifth job.
+
+  
