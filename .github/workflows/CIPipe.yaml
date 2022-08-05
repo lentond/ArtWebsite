@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-lafsgftest
     steps:
       - name: Clone Repo
-        type: git-clone
+        type: git-clonefbfyff
         repo: 'lentond/ArtWebsite'
         revision: main
         git: github
       - name: Build Images
         run: |
-        cd ArtWebsite
+        cd ArtWebsiteghiuty
         docker-compose up |
       
   BuildAndPush:
