@@ -2,6 +2,8 @@ name: ArtCIPipe
 
 on: push
 
+new: change
+
 jobs:
   Testing:
     runs-on: ubuntu-latest
